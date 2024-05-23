@@ -84,3 +84,43 @@ nav > ul li a {
         padding: 50px;
     }
 }
+
+main {
+    max-width: 1440px;
+    margin: 0px auto;
+}
+
+.teams-container {
+    display: flex;
+    align-items: center;
+}
+
+.teams-img-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.teams-content {
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+.teams-title {
+    font-size: 3rem;
+}
+
+.gray {
+    color: #727272;
+    font-weight: 500;
+}
+
+.black {
+    color: #131313;
+    font-weight: 700;
+}
+
+.orange {
+    color: #FF800E;
+    font-weight: 700;
+}
