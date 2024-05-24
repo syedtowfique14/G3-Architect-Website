@@ -69,7 +69,8 @@ nav>ul li a {
     width: 100%;
 }
 
-main {
+main,
+.header-container {
     max-width: 1440px;
     margin: 0px auto;
 }
@@ -113,7 +114,49 @@ main {
     font-size: 3rem;
 }
 
+.features-section {
+    display: flex;
+    margin-top: 130px;
+    gap: 100px;
+}
 
+.features-image img {
+    height: 90%;
+    margin-left: 90px;
+}
+
+.features-section .title {
+    border-left: 5px solid #FF800E;
+    padding-left: 20px;
+}
+
+.features-content .card {
+    padding: 30px;
+    margin-top: 20px;
+    border-radius: 8px;
+    background-color: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+}
+
+.ten-years-badge {
+    border-radius: 8px;
+    background-color: #FF800E;
+    color: #FFF;
+    text-align: center;
+    width: 342px;
+    padding: 40px;
+    position: relative;
+    bottom: 100px;
+}
+
+.ten-years-badge h2 {
+    font-size: 4rem;
+    margin: 0px;
+}
+
+.ten-years-badge p {
+    font-size: 1.5rem;
+}
 
 .facts-card-container {
     display: flex;
@@ -156,24 +199,43 @@ main {
     width: 165px;
 }
 
+footer {
+    text-align: center;
+    background: rgba(255, 144, 14, 0.10);
+    padding: 30px 10px;
+    margin-top: 50px;
+}
+
 /* responsive styles */
 
 @media screen and (max-width:576px) {
     header,
     .teams-content,
-    .facts-section {
+    .facts-section,
+    .features-section {
         padding: 20px;
     }
 
     nav,
     .teams-container,
     .facts-card-container,
-    .sponsors-image-container {
+    .sponsors-image-container,
+    .features-section {
         flex-direction: column-reverse;
     }
 
     .teams-img-container {
         grid-template-columns: 1fr;
+    }
+
+    .features-image img {
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    .ten-years-badge {
+        position: static;
+        max-width: 275px;
     }
 
     .facts-card-container {
@@ -191,6 +253,11 @@ main {
     nav,
     .teams-container {
         flex-direction: column;
+    }
+
+    .features-image img {
+        width: 100%;
+        margin-left: 0px;
     }
 
     .sponsors-image-container img {
